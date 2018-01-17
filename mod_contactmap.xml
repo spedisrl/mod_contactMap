@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+  <name>MOD_CONTACTMAP</name>
+	<author>SPEDI srl</author>
+	<creationDate>Novembre 2017</creationDate>
+  <copyright>Copyright (C) SPEDI srl</copyright>
+	<license>GNU/GPL license: http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>sviluppo@spedi.it</authorEmail>
+	<authorUrl>http://www.spedi.it</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_CONTACTMAP_DESC</description>
+
+    <files>
+        <filename>mod_contactmap.xml</filename>
+        <filename module="mod_contactmap">mod_contactmap.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>image</folder>
+    </files>
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+
+          <field
+            name="title-1"
+            type="text"
+            label="MOD_CONTACTMAP_TITLE1"
+            description="MOD_CONTACTMAP_TITLE1_DESC"
+          />
+
+          <field
+            name="caption-1"
+            type="editor"
+            filter="JComponentHelper::filterText"
+            label="MOD_HERO_CAPTION1"
+            description="MOD_HERO_CAPTION1_DESC"
+          />
+
+          <field
+            name="title-2"
+            type="text"
+            label="MOD_CONTACTMAP_TITLE2"
+            description="MOD_CONTACTMAP_TITLE2_DESC"
+          />
+
+          <field
+            name="caption-2"
+            type="editor"
+            filter="JComponentHelper::filterText"
+            label="MOD_HERO_CAPTION2"
+            description="MOD_HERO_CAPTION2_DESC"
+          />
+
+          <field
+            name="social"
+            type="radio"
+            label="MOD_CONTACTMAP_SOCIAL"
+            description="MOD_CONTACTMAP_SOCIAL_DESC"
+            class="btn-group btn-group-yesno"
+            default="0"
+            >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+          </field>
+
+          <field
+            name="facebook"
+            type="url"
+            label="MOD_CONTACTMAP_FACEBOOK"
+            description="MOD_CONTACTMAP_FACEBOOK_DESC"
+            showon="social:1"
+          />
+
+          <field
+            name="instagram"
+            type="url"
+            label="MOD_CONTACTMAP_INSTAGRAM"
+            description="MOD_CONTACTMAP_INSTAGRAM_DESC"
+            showon="social:1"
+          />
+
+          <field
+            name="twitter"
+            type="url"
+            label="MOD_CONTACTMAP_TWITTER"
+            description="MOD_CONTACTMAP_TWITTER_DESC"
+            showon="social:1"
+          />
+
+        </fieldset>
+
+        <fieldset name="Opzioni" label="Opzioni mappa">
+
+          <field
+            name="full-map"
+            type="radio"
+            label="MOD_CONTACTMAP_FULLMAP"
+            description="MOD_CONTACTMAP_FULLMAP_DESC"
+            class="btn-group btn-group-yesno"
+            default="0"
+            >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+          </field>
+
+          <field
+            name="hieght"
+            type="text"
+            default="400"
+            size="10"
+            label="MOD_CONTACTMAP_MAPHEIGHT"
+            description="MOD_CONTACTMAP_MAPHEIGHT_DESC"
+          />
+
+          <field
+            name="gmapkey"
+            type="text"
+            size="10"
+            label="MOD_CONTACTMAP_GMAPKEY"
+            description="MOD_CONTACTMAP_GMAPKEY_DESC"
+            require="true"
+          />
+
+        </fieldset>
+
+      </fields>
+    </config>
+</extension>

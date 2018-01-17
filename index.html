@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Map - Joomla Module (by SPEDI srl)</title>
+    <meta name="description" content="Contact Map è un modulo Joomla 3.x, creato con Bootstrap 4, HTML5 e CSS3. Puoi generare dei banner per chiamate all'azione per i tuoi siti web.">
+
+    <meta property="og:title" content="Contact Map è un modulo Joomla 3.x, creato con Bootstrap 4, HTML5 e CSS3." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://spedisrl.github.io/mod_contactMap/" />
+    <meta property="og:image" content="https://www.spedi.it/media/k2/items/cache/7a6fe08027b80ee08bda1ed60d73e334_M.jpg" />
+    <meta property="og:site_name" content="Contact Map - Joomla Module (by SPEDI srl)" />
+    <meta property="og:description" content="Contact Map è un modulo Joomla 3.x, creato con Bootstrap 4, HTML5 e CSS3. Puoi generare dei banner per chiamate all'azione per i tuoi siti web." />
+
+    <meta name="twitter:title" content="Contact Map è un modulo Joomla 3.x, creato con Bootstrap 4, HTML5 e CSS3.">
+    <meta name="twitter:image" content="https://www.spedi.it/media/k2/items/cache/7a6fe08027b80ee08bda1ed60d73e334_M.jpg">
+    <meta name="twitter:site" content="https://spedisrl.github.io/mod_contactMap/">
+    <meta name="twitter:description" content="Contact Map è un modulo Joomla 3.x, creato con Bootstrap 4, HTML5 e CSS3. Puoi generare dei banner per chiamate all'azione per i tuoi siti web." />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contactmap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <style media="screen">
+      .bg-light{background-color:#e9ecef!important;}
+      a:hover{text-decoration: none;}
+      h3,h4{color:#343a40;}
+      h3.title-section{position: relative;margin-bottom:20px;}
+      h3.title-section::after{position:absolute;content:'';bottom:-10px;left:0;width:50px;height:5px;background-color:#17a2b8;}
+      h3.display-4{font-size:35px;}
+      h4.display-4{font-size:35px;}
+      .dipendence-list > li{position: relative;}
+      .dipendence-list > li > a{padding-right:5px;font-weight:300;font-size:20px;color:#343a40;}
+      .dipendence-list > li:after{position: relative;content:'\f111';font-family:'FontAwesome';font-size:5px;bottom:4px;}
+      .dipendence-list > li:last-child::after{display:none;}
+      .btn-download::after{position:relative;content:'\f019';font-family:'FontAwesome';margin-left:5px;}
+      .btn-github::after{position:relative;content:'\f09b';font-family:'FontAwesome';margin-left:5px;}
+    </style>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-112603764-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.spedi.it" title="SPEDI srl" target="_blank">
+          <img src="https://www.spedi.it/images/spedi-brand/SPEDI_logo_bianco_full.png" height="70" alt="SPEDI srl">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#demo">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#license">Licenza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#credits">Crediti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/spedisrl/mod_contactMap" target="_blank" title="Vedi su GitHub">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1 class="display-4">Contact Map</h1>
+        <p class="lead">Joomla! 3.x Module</p>
+        <div class="text-center">
+          <ul class="list-inline dipendence-list">
+            <li class="list-inline-item">
+              <a href="#">HTML5/CSS3</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://fontawesome.com" target="_blank">Font Awesome 5</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center mt-4">
+          <a href="https://github.com/spedisrl/mod_contactMap/archive/master.zip" class="btn btn-dark btn-download btn-lg mr-1" onclick="_gaq.push(['_trackEvent', 'Download_calltoaction', 'clicked'])" title="Download">Download</a>
+          <a href="https://github.com/spedisrl/mod_contactMap" target="_blank" class="btn btn-info btn-github btn-lg ml-1" title="Vedi su GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="demo">
+      <div class="container">
+        <h3 class="text-left title-section">Demo</h3>
+      </div>
+
+      <!-- start #demo-1 -->
+      <div id="demo-1">
+        <div class="container">
+          <h3 class="display-4 mt-5 mb-3">Map + contact, Container Fluid</h1>
+        </div>
+
+        <div class="contactmap">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 px-0 map" style="height: 400px">
+                <div id="map-canvas" style="height: 400px"></div>
+                <div id="cd-zoom-in"></div>
+                <div id="cd-zoom-out"></div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 contact d-flex align-items-center" style="height: 400px">
+                <div class="contact-wrap px-5">
+                  <div class="contact-block px-5">
+                    <h3>Recapiti</h3>
+                    <p>1 Hacker Way, Menlo Park, CA 94025, Stati Uniti</p>
+
+                    <ul class="list-inline social">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="contact-block px-5 mt-5">
+                    <h3>Contatti</h3>
+                    <p>Tel. 012345678</p>
+                    <p>Email <a href="#">email@email.it</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMs0FuSTjTdfqXV796HLsr00JFJgRYhH0&callback=initMap" type="text/javascript" defer="defer" async="async"></script>
+        <script src="js/map-demo.js" type="text/javascript"></script>
+      </div>
+      <!-- end #demo-1 -->
+    </section>
+
+    <section id="option" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-left title-section">Opzioni</h3>
+            <ul>
+              <li>Full Container, Map + contact</li>
+              <li>Full Container, Map</li>
+              <li>Container, Map + contact</li>
+              <li>Container, Map</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3 class="text-left title-section">Download</h3>
+            <a href="https://github.com/spedisrl/mod_contactMap/archive/master.zip" class="btn btn-dark btn-download btn-lg mr-1" onclick="_gaq.push(['_trackEvent', 'Download_calltoaction', 'clicked'])" title="Download">Download</a>
+            <a href="https://github.com/spedisrl/mod_contactMap" target="_blank" class="btn btn-info btn-github btn-lg ml-1" title="Vedi su GitHub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="license" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="title-section">Licenza</h3>
+            <p class="lead">GNU/GPL license: <a href="http://www.gnu.org/copyleft/gpl.html" class="btn btn-link">http://www.gnu.org/copyleft/gpl.html</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="credits" class="bg-dark">
+      <div class="footer-top bg-light py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="text-left title-section">Crediti</h3>
+              <a href="https://www.spedi.it" target="_blank" title="SPEDI srl">
+                <img src="https://www.spedi.it/images/spedi-brand/SPEDI_logo_color_full.png" height="100" alt="SPEDI srl">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-2">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-light lead m-0">SPEDI s.r.l. V.le Marconi 72/e, 13045 Gattinara VC - Italia | Tel: +39 0163/835328 Email: info@spedi.it</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/f2be1f91af.js"></script>
+  </body>
+</html>
